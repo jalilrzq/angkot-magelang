@@ -1,0 +1,69 @@
+:root {
+  /* Color */
+  --primaryColor: #21A4CD;
+  --secondaryColor: #DDC190;
+
+  /* Font */
+  /* --mainFont: 'Open Sans', sans-serif;
+  --headingFont: 'Merriweather', serif; */
+}
+@font-face {
+  font-family: "Poppins";
+  src: url('../fonts/poppins.regular.ttf');
+}
+
+* {
+  box-sizing: border-box;
+  text-decoration: none!important;
+}
+body{
+  font-family: 'Poppins';
+  max-width: 414px;
+  margin: auto;
+}
+.heading{
+  font-size: 24px;
+  font-weight: 700;
+}
+.navbar{
+  background-color: var(--primaryColor);
+  /* font-size: 16px; */
+}
+
+/* home */
+.home img{
+  max-width: 80%;
+  margin: auto;
+  border-radius: 20px;
+}
+.home a{
+  background-color: var(--primaryColor);
+  max-width: 80%;
+  margin: 10px auto;
+  color: white;
+  padding: 10px;
+}
+
+/* Rute */
+.rute a{
+  background-color: var(--primaryColor);
+  max-width: 90%;
+  margin: 5px auto;
+  text-align: start;
+}
+.rute h2{
+  font-weight: 700;
+}
+.rute img{
+  width: 50px;
+}
+
+/* jalur */
+.jalur .icon{
+  color: #4E75FF;
+  size: 2rem;
+  font-weight: 700;
+}
+.jalur p{
+  text-align: start;
+}
