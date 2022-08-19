@@ -20,8 +20,8 @@
         <img src="assets/image/Hero.png" alt="">
       </div>
       <div class="row">
-        <a class="btn" href="rute.php" role="button">Semua Rute</a>
-        <a class="btn" href="info-rute.php" role="button">Info Rute</a>
+        <a class="btn" href="peta.php" role="button">Peta Magelang</a>
+        <a class="btn" href="rute.php" role="button">Info Rute</a>
         <a class="btn" href="help.php" role="button">Bantuan</a>
       </div>
     </div>

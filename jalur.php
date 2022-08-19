@@ -12,81 +12,24 @@
 </head>
 <body>
   <!-- Navbar -->
-  <?php include 'component/navbar.php'; ?>
+  <?php 
+    include 'component/navbar.php';
+    include 'koneksi.php';
+    $ID = $_GET['id'];
+    $query = mysqli_query($koneksi, "SELECT * FROM rute_angkot WHERE ID_RUTE = '$ID'");
+    $jalur = mysqli_fetch_array($query);
+  ?>
 
-  <section class="rute">
+
+  <section class="jalur">
     <div class="container">
       <div class="row mt-3 text-center">
-        <h1 class="heading">Informasi Rute</h1>
+        <h1 class="heading" style="color: #<?php echo $jalur['COLOR']; ?>;"><?php echo $jalur['NAMA_RUTE']; ?> - <?php echo $jalur['KETERANGAN']; ?></h1>
       </div>
       <div class="row">
-        <a class="btn" href="#" role="button">
-          <div class="row d-flex justify-content-end">
-            <div class="col-8">
-              <h2 style="color: #4E75FF;">Jalur 1</h2>
-              <p>Terminal Kebonpolo</p>
-            </div>
-            <div class="col-4 m-auto d-flex justify-content-end">
-              <img src="assets/image/jalur/Icon-angkot-1.png" alt="">
-            </div>
-          </div>
-        </a>
-        <a class="btn" href="#" role="button">
-          <div class="row d-flex justify-content-end">
-            <div class="col-8">
-              <h2 style="color: #FF4E4E;">Jalur 2</h2>
-              <p>Terminal Ikhlas</p>
-            </div>
-            <div class="col-4 m-auto d-flex justify-content-end">
-              <img src="assets/image/jalur/Icon-angkot-2.png" alt="">
-            </div>
-          </div>
-        </a>
-        <a class="btn" href="#" role="button">
-          <div class="row d-flex justify-content-end">
-            <div class="col-8">
-              <h2 style="color: #D14EFF;">Jalur 3</h2>
-              <p>Sub Terminal Ikhlas</p>
-            </div>
-            <div class="col-4 m-auto d-flex justify-content-end">
-              <img src="assets/image/jalur/Icon-angkot-3.png" alt="">
-            </div>
-          </div>
-        </a>
-        </a>
-        <a class="btn" href="#" role="button">
-          <div class="row d-flex justify-content-end">
-            <div class="col-8">
-              <h2 style="color: #4EF4FF;">Jalur 4</h2>
-              <p>Terminal Tidar</p>
-            </div>
-            <div class="col-4 m-auto d-flex justify-content-end">
-              <img src="assets/image/jalur/Icon-angkot-4.png" alt="">
-            </div>
-          </div>
-        </a>
-        <a class="btn" href="#" role="button">
-          <div class="row d-flex justify-content-end">
-            <div class="col-8">
-              <h2 style="color: #5CFF4E;">Jalur 5</h2>
-              <p>Terminal Tidar</p>
-            </div>
-            <div class="col-4 m-auto d-flex justify-content-end">
-              <img src="assets/image/jalur/Icon-angkot-5.png" alt="">
-            </div>
-          </div>
-        </a>
-        <!-- <a class="btn" href="#" role="button">
-          <div class="row d-flex justify-content-end">
-            <div class="col-8">
-              <h2 style="color: #5CFF4E;">Jalur 6</h2>
-              <p>Terminal Tidar</p>
-            </div>
-            <div class="col-4 m-auto d-flex justify-content-end">
-              <img src="assets/image/jalur/Icon-angkot-6.png" alt="">
-            </div>
-          </div>
-        </a> -->
+        <div class="col text-center">
+          <img style="width: 100%" src="<?php echo $jalur['DATA_RUTE']; ?>" alt="<?php echo $jalur['NAMA_RUTE']; ?>">
+        </div>
       </div>
     </div>
   </section>
