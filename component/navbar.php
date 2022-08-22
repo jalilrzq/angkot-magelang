@@ -14,8 +14,11 @@
         <a class="nav-link" href="index.php">Home</a>
         <a class="nav-link" href="peta.php">Peta Magelang</a>
         <a class="nav-link" href="rute.php">Info Rute</a>
-        <!-- <a class="nav-link" href="#">Cari Rute</a> -->
         <a class="nav-link" href="help.php">Bantuan</a>
+        <a class="nav-link" href="login.php">Login</a>
+        <a class="nav-link" href="help.php">User</a>
+        <a class="nav-link" href="help.php">Edit Rute</a>
+        <a class="nav-link" href="help.php">Logout</a>
       </div>
     </div>
   </div>

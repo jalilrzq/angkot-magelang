@@ -67,3 +67,8 @@ body{
 .jalur p{
   text-align: start;
 }
+
+/* Dashboard */
+.dashboard h1{
+  color: #21A4CD;
+}
