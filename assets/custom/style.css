@@ -68,7 +68,24 @@ body{
   text-align: start;
 }
 
+/* Login */
+.login form{
+  width: 80%;
+  margin: auto;
+}
+.login .form-outline{
+  margin: auto;
+}
+
 /* Dashboard */
 .dashboard h1{
+  color: #21A4CD;
+}
+.dashboard .count{
+  color: #21A4CD;
+}
+
+/* Edit */
+.edit h3{
   color: #21A4CD;
 }
